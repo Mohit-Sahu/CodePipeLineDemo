@@ -25,7 +25,7 @@ public class OrderServiceApplication {
                 sorted(Comparator.comparing(Order::getPrice)).collect(Collectors.toList());
     }
 
-     @GetMapping
+     @GetMapping("/mohit")
     public String hellomohit() {
        return "Hello Mohit Your code deployed successfully";
     }
