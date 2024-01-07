@@ -25,6 +25,11 @@ public class OrderServiceApplication {
                 sorted(Comparator.comparing(Order::getPrice)).collect(Collectors.toList());
     }
 
+     @GetMapping
+    public String hellomohit() {
+       return "Hello Mohit Your code deployed successfully";
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(OrderServiceApplication.class, args);
     }
